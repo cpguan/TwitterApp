@@ -2,7 +2,7 @@
 //  ComposeTweetViewController.swift
 //  MyTwitter
 //
-//  Created by Pan Guan on 2/19/17.
+//  Created by Pan Guan on 3/1/17.
 //  Copyright © 2017 Pan Guan. All rights reserved.
 //
 
@@ -131,8 +131,7 @@ class ComposeTweetViewController: UIViewController, UITextViewDelegate{
     charCountLabel.text = String(describing: charLimit!)
   }
   
-  
-  
+
   
   @IBAction func submitTweet(_ sender: UIButton) {
     print("Pressed Submit Tweet")

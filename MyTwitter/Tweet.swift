@@ -13,12 +13,15 @@ class Tweet: NSObject {
   var user: User?
   var text: String?
   var timestamp: Date?
+    
   var retweetCount: Int? = 0
   var favoritesCount: Int? = 0
+    
   var favorited: Bool?
   var retweeted: Bool?
   var id: NSNumber?
   var idStr: String?
+    
   var retweetedStatus: NSDictionary?
   var currentUserRetweet: NSDictionary?
   
@@ -45,12 +48,9 @@ class Tweet: NSObject {
 
     retweetedStatus = dictionary["retweeted_status"] as? NSDictionary
     currentUserRetweet = dictionary["current_user_retweet"] as? NSDictionary
-  
-//     ['in_reply_to_status_id_str']
-    
+
     }
 
-  
   
   //MARK: - Convenience Methods
   
